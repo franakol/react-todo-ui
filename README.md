@@ -1,6 +1,6 @@
 # Todo List React UI
 
-A modern, responsive React frontend for a Todo List application. This project works in conjunction with a Flask backend API to provide a complete Todo List solution.
+A modern, responsive React frontend for a Todo List application. This project works in conjunction with a FastAPI backend API to provide a complete Todo List solution.
 
 ## Features
 
@@ -18,7 +18,7 @@ A modern, responsive React frontend for a Todo List application. This project wo
 
 - Node.js (v14.0.0 or higher)
 - npm (v6.0.0 or higher)
-- Backend API server (Flask)
+- Backend API server (FastAPI)
 
 ## Installation and Setup
 
@@ -49,15 +49,22 @@ The application will be available at [http://localhost:5173](http://localhost:51
 
 ## Backend Setup
 
-This frontend is designed to work with a Flask backend API. To set up the backend:
+This frontend is designed to work with a FastAPI backend API. The backend repository is available at [https://github.com/franakol/fastapi-todo-list](https://github.com/franakol/fastapi-todo-list).
 
-1. Clone the backend repository (if separate) or navigate to the backend directory
+To set up the backend:
+
+1. Clone the backend repository:
+   ```bash
+   git clone https://github.com/franakol/fastapi-todo-list.git
+   cd fastapi-todo-list
+   ```
 2. Create a virtual environment: `python -m venv venv`
 3. Activate the virtual environment:
    - Windows: `venv\Scripts\activate`
    - macOS/Linux: `source venv/bin/activate`
 4. Install dependencies: `pip install -r requirements.txt`
-5. Start the server: `python main.py`
+5. Set up PostgreSQL (see backend README for details)
+6. Start the server: `python main.py`
 
 The backend API will be available at [http://localhost:8000](http://localhost:8000).
 
